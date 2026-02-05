@@ -10,7 +10,9 @@ Il **Cifrario Affine** è un classico sistema di crittografia a sostituzione **m
 
 La chiave del cifrario è costituita da due numeri interi, $a$ e $b$. La funzione di cifratura per una lettera $x$ è definita dall'equazione lineare:
 
-$$E(x) = (ax + b) \pmod m$$
+$$
+E(x) = (ax + b) \pmod m
+$$
 
 Dove:
 
@@ -27,7 +29,9 @@ Dove:
 
 Per decifrare, dobbiamo invertire la funzione. La formula di decifratura è:
 
-$$D(x) = a^{-1}(x - b) \pmod m$$
+$$
+D(x) = a^{-1}(x - b) \pmod m
+$$
 
 > [!NOTE] Attenzione all'inverso di a
 > Qui **$a^{-1}$** non è $1/a$ in senso classico, ma è l'**inverso moltiplicativo modulare** di $a$. È quel numero che, moltiplicato per $a$, dà 1 modulo 26.
