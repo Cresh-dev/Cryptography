@@ -2,9 +2,12 @@
 title: Panoramica sulla Crittografia
 ---
 
+_Tag:_ #cryptography #informatica 
+
+---
 La **crittografia** è la scienza che permette di rendere un messaggio incomprensibile a chiunque non sia autorizzato a leggerlo. È l'arte di proteggere le informazioni trasformandole in un formato illeggibile.
 
-# I due tipi principali di crittografia
+## I due tipi principali di crittografia
 
 Esistono due modi principali per proteggere i dati, ognuno con uno scopo diverso. Innanzitutto iniziamo con il definire il crittosistema che è una quintupla di elementi $(P,C,K,E,D)$ con:
 - $P$: plaintexts (testo in chiaro)
@@ -13,14 +16,14 @@ Esistono due modi principali per proteggere i dati, ognuno con uno scopo diverso
 - $E$: encryption
 - $D$: decryption
 
-## Crittografia Simmetrica (La stessa chiave)
+### Crittografia Simmetrica (La stessa chiave)
 
 È il metodo più antico e veloce. Mittente e destinatario usano la **stessa identica chiave** sia per chiudere che per aprire il messaggio. Possiamo analizzare questi crittosistemi:
 
 - [[Affine cypher]]
 - [[Affine Hill cypher]]
 
-## Crittografia Asimmetrica (Chiave pubblica e privata)
+### Crittografia Asimmetrica (Chiave pubblica e privata)
 
 Questo sistema risolve il problema dello scambio della chiave simmetrica. L'idea che sta alla base di ciò è la **_trapdoor function_** che è una funziona a senso unico con tre caratteristiche principali:
 - Semplice da calcolare

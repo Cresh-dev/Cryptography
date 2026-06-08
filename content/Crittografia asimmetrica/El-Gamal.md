@@ -1,6 +1,6 @@
 La sicurezza di ElGamal risiede nella difficoltà computazionale del **Problema del Logaritmo Discreto (DLP)** in campi finiti, cioè è facile calcolare l'esponenziale: $y = g^x \pmod p$ ma è estremamente difficile (computazionalmente impossibile) fare l'inverso: dato $y$, $g$ e $p$, trovare l'esponente $x$. 
 
-# Generazione delle Chiavi
+## Generazione delle Chiavi
 
 Questo è un crittosistema molto similare a [[Diffie-Hellman|D-H]]. Alice e Bob concordano pubblicamente su due numeri:
 
@@ -9,7 +9,7 @@ Questo è un crittosistema molto similare a [[Diffie-Hellman|D-H]]. Alice e Bob 
 3. Alice sceglie una chiave privata $e_1 \in \mathbb{Z}$ e invia la chiave pubblica $g^{e_1} \pmod p$ a Bob.
 4. Bob sceglie una chiave privata $e_2 \in \mathbb{Z}$ e invia la chiave pubblica $g^{e_2} \pmod p$ a Alice.
 
-# Cifratura
+## Cifratura
 
 Prima di cifrare dobbiamo dividere il messaggio in blocchi tale che $m_i < p$. Ogni blocco viene cifrato con questa formula:
 
@@ -17,7 +17,7 @@ $$
 m_i \cdot {(g^{e_B})}^{e_A} \pmod{p}
 $$
 
-# Decifratura
+## Decifratura
 
 Ogni blocco viene decifrato con questa formula:
 
@@ -25,7 +25,7 @@ $$
 m_i \cdot {(g^{e_B})}^{e_A} \cdot {(g^{e_A})}^{-e_B} \pmod{p} \equiv m_i \pmod{p}
 $$
 
-# Firma digitale
+## Firma digitale
 
 La **firma digitale di ElGamal** è uno schema crittografico che serve a **garantire autenticità, integrità e non ripudio** di un messaggio. È basata sul **problema del logaritmo discreto**, lo stesso su cui si fonda l’algoritmo di cifratura ElGamal. Per firmare un messaggio $m$ l'utente A sceglie un grande intero chiamato $k \in \mathbb{Z_{p-1}}$, con $gcd(k, p-1) = 1$. L'utente A calcola $S_1$ e $S_2$ che hanno le seguenti formule:
 
@@ -45,7 +45,7 @@ $$
 W = (g^{e_A})^{S_1} \cdot S_1^{S_2} \pmod{p}
 $$
 
-# El-Gamal con Curve Ellittiche
+## El-Gamal con Curve Ellittiche
 
 **EC-ElGamal** è la versione di ElGamal che lavora non su $\mathbb{Z}_p​^*$, ma sul **gruppo dei punti di una curva ellittica** su un campo finito. La sicurezza non si basa più sul logaritmo discreto classico, ma sul **problema del logaritmo discreto su curve ellittiche (ECDLP)**, molto più difficile a parità di dimensioni. Tutti conoscono:
 
@@ -69,7 +69,7 @@ $$
 P_{m_i} \oplus e_A(e_BG) \oplus -e_B(e_AG) = P_{m_i}
 $$
 
-## Firma digitale con Curve Ellittiche
+### Firma digitale con Curve Ellittiche
 
 Si fissano i parametri pubblici del sistema:
 

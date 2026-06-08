@@ -1,6 +1,6 @@
 La sicurezza di RSA si basa sulla teoria dei numeri, in particolare sulla difficoltà di scomporre numeri molto grandi nei loro fattori primi.
 
-# Processo di Cifratura
+## Processo di Cifratura
 
 Prima di cifrare il testo dobbiamo dividerlo in blocchi tramite questa regola: 
 
@@ -18,7 +18,7 @@ $$
 C = M^{e_{B}} \pmod{n_{B}}
 $$
 
-# Processo di Decifratura
+## Processo di Decifratura
 
 Prima di effettuare la decifratura dobbiamo calcolare la chiave privata ($d_{B}$) dell'utente B. Per farlo dobbiamo eseguire questo calcolo:
 
@@ -32,11 +32,11 @@ $$
 M = C^{d_{b}} \pmod{n_{B}}
 $$
 
-# Perché RSA è sicuro
+## Perché RSA è sicuro
 
 La sicurezza di RSA risiede nel problema della **fattorizzazione degli interi**. È facilissimo per un computer moltiplicare due numeri primi giganti ($p \cdot q$) per ottenere $n$, ma è estremamente difficile (computazionalmente intrattabile), dato solo $n$, risalire ai due numeri originali $p$ e $q$.
 
-# Autenticazione della firma digitale
+## Autenticazione della firma digitale
 
 La **Firma Digitale** è l'applicazione "speculare" dell'RSA rispetto alla cifratura. Se nella cifratura l'obiettivo è la _segretezza_ (nascondere il messaggio), nella firma digitale l'obiettivo è l'**autenticità** (provare chi l'ha scritto) e l'**integrità** (provare che non è stato modificato). Quando l'utente A invia a B il messaggio cifrato insieme ad esso viene inviata anche la firma $F$ (che nel nostro caso corrisponde all'ultima parte del messaggio) cifrata con la seguente formula:
 

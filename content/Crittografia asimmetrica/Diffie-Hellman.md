@@ -11,7 +11,7 @@ Il crittosistema D-H permette a due persone di generare insieme una chiave segre
 > [!NOTE] Perché è sicuro il crittosistema D-H
 > La sicurezza di D-H risiede nella difficoltà computazionale del **Problema del Logaritmo Discreto (DLP)**. Dato un elemento $c \in G$ è computazionalmente impossibile per grandi $p$ trovare $K \in \mathbb{Z}$ tale che $c=g^{k}$
 
-# D-H con Curve Ellittiche
+## D-H con Curve Ellittiche
 
 **ECDH (Elliptic Curve Diffie–Hellman)** è il protocollo che permette a due parti di **stabilire una chiave segreta condivisa** su un canale insicuro usando le **curve ellittiche**.
 
