@@ -1,3 +1,7 @@
+---
+title: Diffie-Hellman
+description: Il crittosistema D-H permette a due persone di generare insieme una chiave segreta attraverso un canale di comunicazione non sicuro (come internet), senza che…
+---
 Il crittosistema D-H permette a due persone di generare insieme una chiave segreta attraverso un canale di comunicazione non sicuro (come internet), senza che nessuno che stia ascoltando possa capire quale sia quella chiave. Alice e Bob concordano pubblicamente su due numeri:
 
 1. Un numero primo molto grande, $p$.  

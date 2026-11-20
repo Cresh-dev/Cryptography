@@ -1,11 +1,15 @@
-L'**Affine Hill Cypher** è, in sostanza, la versione "potenziata" dell'[[Affine cypher]] che abbiamo visto. Se il Cifrario Affine combina moltiplicazione e addizione su _singoli numeri_, e il Cifrario di Hill usa la moltiplicazione su _matrici_. 
+---
+title: Affine Hill cipher
+description: L'Affine Hill Cipher è, in sostanza, la versione "potenziata" dell'Affine cipher che abbiamo visto.
+---
+L'**Affine Hill Cipher** è, in sostanza, la versione "potenziata" dell'[[Affine cypher|Affine cipher]] che abbiamo visto. Se il Cifrario Affine combina moltiplicazione e addizione su _singoli numeri_, e il Cifrario di Hill usa la moltiplicazione su _matrici_. 
 
-> [!NOTE] Più sicuro rispetto al classico Affine cypher
-> L'Affine Hill cypher ha proprietà **polialfabetiche**, quindi la cifratura di una lettera dipende dalla **combinazione lineare** con le altre lettere del suo blocco.
+> [!NOTE] Più sicuro rispetto al classico Affine cipher
+> L'Affine Hill cipher ha proprietà **polialfabetiche**, quindi la cifratura di una lettera dipende dalla **combinazione lineare** con le altre lettere del suo blocco.
 
 ## Processo di Cifratura
 
-L'Affine Hill cypher è un **cifrario a blocchi** quindi rispetto all'Affine cypher cambia radicalmente il modo in cui prepariamo il testo prima di cifrarlo, perché in questo caso non analizziamo più lettere per lettera ma blocchi che possono essere composti da due o più lettere. La dimensione del blocco è determinata dalla dimensione della matrice chiave $X$. Se ad esempio usassimo una matrice **$2 \times 2$**, dovremmo dividere il testo in **bigrammi** (coppie di 2 lettere). Una volta diviso il testo in blocchi possiamo procedere con la seguente formula per effettuare la cifratura :
+L'Affine Hill cipher è un **cifrario a blocchi** quindi rispetto all'Affine cipher cambia radicalmente il modo in cui prepariamo il testo prima di cifrarlo, perché in questo caso non analizziamo più lettere per lettera ma blocchi che possono essere composti da due o più lettere. La dimensione del blocco è determinata dalla dimensione della matrice chiave $X$. Se ad esempio usassimo una matrice **$2 \times 2$**, dovremmo dividere il testo in **bigrammi** (coppie di 2 lettere). Una volta diviso il testo in blocchi possiamo procedere con la seguente formula per effettuare la cifratura:
 
 $$
 C = (X \cdot \vec{a} + \vec{b}) \pmod m

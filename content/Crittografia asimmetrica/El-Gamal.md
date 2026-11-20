@@ -1,3 +1,7 @@
+---
+title: El-Gamal
+description: La sicurezza di ElGamal risiede nella difficoltà computazionale del Problema del Logaritmo Discreto (DLP) in campi finiti, cioè è facile calcolare…
+---
 La sicurezza di ElGamal risiede nella difficoltà computazionale del **Problema del Logaritmo Discreto (DLP)** in campi finiti, cioè è facile calcolare l'esponenziale: $y = g^x \pmod p$ ma è estremamente difficile (computazionalmente impossibile) fare l'inverso: dato $y$, $g$ e $p$, trovare l'esponente $x$. 
 
 ## Generazione delle Chiavi

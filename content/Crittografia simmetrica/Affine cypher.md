@@ -1,3 +1,7 @@
+---
+title: Affine cipher
+description: Il Cifrario Affine è un classico sistema di crittografia a sostituzione monoalfabetica.
+---
 Il **Cifrario Affine** è un classico sistema di crittografia a sostituzione **monoalfabetica**. Per usare il cifrario affine, dobbiamo prima mappare ogni lettera dell'alfabeto a un numero intero. Usando l'alfabeto internazionale di 26 lettere:
 
 - A = 0, B = 1, ..., Z = 25.
